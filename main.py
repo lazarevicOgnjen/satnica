@@ -5,7 +5,7 @@ import subjectMD
 
 
 
-url = input('url: ')
+url = os.getenv('url')
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
 
