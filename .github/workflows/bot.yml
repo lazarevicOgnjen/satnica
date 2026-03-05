@@ -27,7 +27,7 @@ jobs:
 
     - name: Execute script
       env:
-        url: {{ github.event.inpputs.url_to_scrape }}
+        url: ${{ github.event.inpputs.url_to_scrape }}
       run: python main.py
 
     - name: Commit and Push changes
